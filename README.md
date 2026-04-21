@@ -50,6 +50,34 @@ npm run build
 npm run preview
 ```
 
+## Deploy com Firebase Hosting
+
+1. Instale o Firebase CLI, se ainda não tiver:
+
+```bash
+npm install -g firebase-tools
+```
+
+2. Faça login na sua conta Google:
+
+```bash
+firebase login
+```
+
+3. Conecte o projeto a um Firebase Project:
+
+```bash
+firebase init hosting
+```
+
+4. Faça o deploy:
+
+```bash
+npm run deploy:firebase
+```
+
+O `firebase.json` já está configurado para SPA, então as rotas do React funcionam no Hosting.
+
 ## Rotas
 
 - `/` - busca de usuário
